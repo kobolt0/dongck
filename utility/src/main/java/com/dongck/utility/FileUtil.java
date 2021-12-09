@@ -21,7 +21,7 @@ public class FileUtil {
     public static List<String> readTxt(String strPath, Charset cs) throws IOException{
         //파일 객체 생성
         Path path = Paths.get(strPath);
-        //파일 내용담을 리스트
+        //파일 내용담을 리스트 
         List<String> list = new ArrayList<String>();
             list = Files.readAllLines(path,cs);
         return list;
